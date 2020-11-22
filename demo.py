@@ -11,8 +11,14 @@ Options:
 [--arg4=<arg4>]   Takes any value (this is an optional option)
 """
 
+def main():
+    print("1")
+    print("2")
+    print("3")
+
 from docopt import docopt
 opt = docopt(__doc__)
 print(opt)
 print(type(opt))
 print(opt["--arg4"])
+main()
