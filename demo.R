@@ -12,6 +12,13 @@ Options:
 
 " -> doc
 
+
+main <- function() {
+    print("1")
+    print("2")
+    print("3")
+}
+
 library(docopt)
 opt <- docopt(doc)
 print(opt)
